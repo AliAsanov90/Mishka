@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mishka catalog</title>
+</head>
+<body>
+  <header class="page-geader">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/90x40" width="90" height="40" alt="Мишка" >
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a>Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a>Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="offers-list">
+        <li class="offers-list__item">
+          <a>Новые поступления</a>
+        </li>
+        <li class="offers-list__item">
+          <a>Распродажа</a>
+        </li>
+      </ul>
+      <p class="free-delivery">
+        Бесплатная доставка по России
+      </p>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-title">Каталог товаров</h1>
+
+    <!-- Section Products -->
+    <section class="products">
+      <ul class="products__list">
+        <li class="products__item product">
+          <img class="product__image" src="http://placehold.it/320x465" width="320" height="465" alt="Зайчик-попрыгайчик">
+          <h2 class="product__title">Зайчик-попрыгайчик</h2>
+          <p class="product__params">Рост 30 см, вес 200 г</p>
+          <b class="product__price">1 200 руб.</b>
+        </li>
+        <li class="products__item product">
+          <img class="product__image" src="http://placehold.it/320x465" width="320" height="465" alt="Корзинка для белья">
+          <h2 class="product__title">Корзинка для белья</h2>
+          <p class="product__params">Диаметр 15 см, высота 10 см</p>
+          <b class="product__price">690 руб.</b>
+        </li>
+        <li class="products__item product">
+          <img class="product__image" src="http://placehold.it/320x465" width="320" height="465" alt="Большая корзинка для игрушек">
+          <h2 class="product__title">Большая корзинка для игрушек</h2>
+          <p class="product__params">Диаметр 30 см, высота 30 см</p>
+          <b class="product__price">1 500 руб.</b>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section Video -->
+    <section class="production">
+      <video class="production__video" controls width="685">
+        <source src="/media/examples/flower.webm" type="video/webm">
+        <source src="/media/examples/flower.mp4" type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+      <h2 class="production__title">Процесс производства</h2>
+      <p class="production__info">
+        По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+      </p>
+      <a class="production__order button" href="#0">Сделать заказ</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="#0">
+      <img class="page-footer__image" src="http://placehold.it/105x35" width="105" height="35" alt="Логотип Мишка">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTMLacademy</a>
+    </div>
+  </footer>
+</body>
+</html>

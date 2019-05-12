@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Mishka</title>
+</head>
+<body>
+  <header class="page-geader">
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="http://placehold.it/90x40" width="90" height="40" alt="Мишка" >
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="site-list__item">
+          <a href="form.html">Вязание на заказ</a>
+        </li>
+        <li class="site-list__item">
+          <a>Поиск по сайту</a>
+        </li>
+        <li class="site-list__item">
+          <a>Корзина: пока пуста</a>
+        </li>
+      </ul>
+      <ul class="offers-list">
+        <li class="offers-list__item">
+          <a>Новые поступления</a>
+        </li>
+        <li class="offers-list__item">
+          <a>Распродажа</a>
+        </li>
+      </ul>
+      <p class="free-delivery">
+        Бесплатная доставка по России
+      </p>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="page-title">Вязание на заказ</h1>
+    <p class="intro">
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+    </p>
+    <form class="order-form" action="https://echo.htmlacademy.ru" method="GET">
+      <!-- Type choice -->
+      <div class="order-form__type type">
+        <h2 class="type__title">Тип</h2>
+        <ul class="type__list">
+          <li class="type__item">
+            <input class="type__input" type="radio" name="type" id="accessory" value="accessory">
+            <label class="type__label" for="accessory">Аксессуар для интерьера</label>
+          </li>
+          <li class="type__item">
+            <input class="type__input" type="radio" name="type" id="toy" value="toy">
+            <label class="type__label" for="toy">Детская игрушка</label>
+          </li>
+        </ul>
+      </div>
+      <!-- Color choice -->
+      <div class="order-form__color color">
+        <h2 class="color__title">Цвет</h2>
+        <ul class="color__list">
+          <li class="color__item">
+            <input class="color__input" type="checkbox" name="white" id="white" value="white">
+            <label class="color__label" for="white">Белый</label>
+          </li>
+          <li class="color__item">
+            <input class="color__input" type="checkbox" name="black" id="black" value="black">
+            <label class="color__label" for="black">Черный</label>
+          </li>
+          <li class="color__item">
+            <input class="color__input" type="checkbox" name="gray" id="gray" value="gray">
+            <label class="color__label" for="gray">Серый</label>
+          </li>
+          <li class="color__item">
+            <input class="color__input" type="checkbox" name="pink" id="pink" value="pink">
+            <label class="color__label" for="pink">Розовый</label>
+          </li>
+          <li class="color__item">
+            <input class="color__input" type="checkbox" name="tiffany" id="tiffany" value="tiffany">
+            <label class="color__label" for="tiffany">"Тиффани"</label>
+          </li>
+          <li class="color__item">
+            <input class="color__input" type="checkbox" name="orange" id="orange" value="orange">
+            <label class="color__label" for="orange">Оранжевый</label>
+          </li>
+        </ul>
+      </div>
+      <!-- Full Name -->
+      <div class="order-form__fullname fullname">
+        <h2 class="fullname__title">ФИО</h2>
+        <ul class="fullname__list">
+          <li class="fullname__item">
+            <label class="fullname__label" for="name">Имя:</label>
+            <input class="fullname__input" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+          </li>
+          <li class="fullname__item">
+            <label class="fullname__label" for="last-name">Фамилия:</label>
+            <input class="fullname__input" type="text" name="last-name" id="last-name" placeholder="Укажите фамилию*">
+          </li>
+          <li class="fullname__item">
+            <label class="fullname__label" for="father-name">Отчество:</label>
+            <input class="fullname__input" type="text" name="father-name" id="father-name" placeholder="Отчество, если желаете">
+          </li>
+        </ul>
+      </div>
+      <!-- Telephone and E-mail -->
+      <div class="order-form__contacts contact-info">
+        <ul class="contact-info__list">
+          <li class="contact-info__item">
+            <h2 class="contact-info__title">
+              <label for="tel" class="contact-info__label">Тел</label>
+            </h2>
+            <input class="contact-info__input" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*">
+          </li>
+          <li class="contact-info__item">
+            <h2 class="contact-info__title">
+              <label for="email" class="contact-info__label">E-mail</label>
+            </h2>
+            <input class="contact-info__input" type="email" name="email" id="email" placeholder="Ваш Email*">
+          </li>
+        </ul>
+      </div>
+      <!-- Extra wishes -->
+      <div class="order-form__extra extra">
+        <h2 class="extra__title">
+          <label class="extra__label" for="extra">Доп</label>
+        </h2>
+        <textarea class="extra__text" name="extra" id="extra" cols="100" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+      </div>
+      <button class="order-form__submit button" type="submit">Отправить заказ</button>
+      <p class="order-form__info">*Поля обязательны для заполнения</p>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="#0">
+      <img class="page-footer__image" src="http://placehold.it/105x35" width="105" height="35" alt="Логотип Мишка">
+    </a>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTMLacademy</a>
+    </div>
+  </footer>
+</body>
+</html>
