@@ -1,0 +1,26 @@
+{
+  "name": "mishka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AliAsanov90/Mishka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AliAsanov90/Mishka/issues"
+  },
+  "homepage": "https://github.com/AliAsanov90/Mishka#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch": "^5.0.1",
+    "gulp-watch-sass": "^1.4.1"
+  }
+}
