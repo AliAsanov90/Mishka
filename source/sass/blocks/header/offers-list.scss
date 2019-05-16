@@ -1,0 +1,14 @@
+
+.offers-list {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .offers-list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    order: 4;
+    width: 350px;
+  }
+}

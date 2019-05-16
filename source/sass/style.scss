@@ -1,15 +1,16 @@
 
-// @font-face {
-//   font-family: 'gilroyextrabold';
-//   src: url('../fonts/gilroy-extrabold-webfont.woff2') format('woff2');
-//   font-weight: normal;
-//   font-style: normal;
-// }
-
 @import 'variables';
 @import 'mixins';
 @import 'blocks/scaffolding';
-@import 'blocks/page-header';
-
-
+@import 'blocks/container';
+@import 'blocks/header/main-nav';
+@import 'blocks/header/site-list';
+@import 'blocks/header/user-list';
+@import 'blocks/header/offers-list';
+@import 'blocks/main/page-title';
+@import 'blocks/main/product-types';
+@import 'blocks/main/weekly-product';
+@import 'blocks/main/about-us';
+@import 'blocks/main/reviews';
+@import 'blocks/main/contacts';
 

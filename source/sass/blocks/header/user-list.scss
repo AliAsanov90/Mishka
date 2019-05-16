@@ -1,0 +1,16 @@
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    order: 2;
+    width: 350px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    order: 3;
+  }
+}

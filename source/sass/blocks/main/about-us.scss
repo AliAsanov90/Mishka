@@ -1,0 +1,20 @@
+
+.about-us__list {
+  @include reset-list;
+}
+
+.about-us__item {
+  padding-top: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .about-us__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-us__column-left,
+  .about-us__column-right {
+    width: 330px;
+  }
+}

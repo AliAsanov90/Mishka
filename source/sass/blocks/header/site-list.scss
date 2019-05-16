@@ -1,0 +1,17 @@
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    @include reset-list;
+    display: flex;
+    justify-content: space-between;
+    order: 3;
+    width: 310px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    order: 1;
+  }
+}
+

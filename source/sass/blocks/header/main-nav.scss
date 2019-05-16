@@ -1,0 +1,46 @@
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__list {
+  @include reset-list;
+}
+
+.main-nav__delivery {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-nav__wrapper {
+    width: 310px;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__delivery {
+    display: block;
+    order: 4;
+    width: 350px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__wrapper {
+    order: 2;
+  }
+
+  .main-nav__delivery {
+    order: 5;
+  }
+}

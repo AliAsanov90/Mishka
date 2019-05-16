@@ -1,0 +1,15 @@
+
+.product-types__list {
+  @include reset-list;
+}
+
+@media (min-width: $tablet-width) {
+  .product-types__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product-types__item {
+    width: 330px;
+  }
+}
