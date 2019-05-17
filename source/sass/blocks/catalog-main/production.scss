@@ -1,0 +1,42 @@
+
+.production__title2 {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .production__title1 {
+    display: none;
+  }
+
+  .production__title2 {
+    display: flex;
+  }
+
+  .production__video {
+    width: 100%;
+  }
+
+  .production__wrapper {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .production__order {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .production {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .production__video {
+    width: 680px;
+  }
+
+  .production__wrapper {
+    width: 235px;
+  }
+}

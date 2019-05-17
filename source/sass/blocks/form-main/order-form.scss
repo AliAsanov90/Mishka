@@ -1,0 +1,7 @@
+
+@media (min-width: $tablet-width) {
+  .order-form__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

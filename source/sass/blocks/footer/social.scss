@@ -1,0 +1,10 @@
+
+.social__list {
+  @include reset-list;
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  margin-left: 10px;
+}

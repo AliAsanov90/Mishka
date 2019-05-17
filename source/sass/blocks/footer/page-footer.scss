@@ -1,0 +1,15 @@
+
+.page-footer__logo {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    display: flex;
+  }
+}

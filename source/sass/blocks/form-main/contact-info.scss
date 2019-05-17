@@ -1,0 +1,10 @@
+
+.contact-info__list {
+  @include reset-list;
+}
+
+@media (min-width: $tablet-width) {
+  .contact-info__item {
+    display: flex;
+  }
+}

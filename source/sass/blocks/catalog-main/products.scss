@@ -1,0 +1,25 @@
+
+.products__list {
+  @include reset-list;
+}
+
+.products__item {
+  margin-bottom: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .products__item {
+    display: flex;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .products__item {
+    display: block;
+  }
+}

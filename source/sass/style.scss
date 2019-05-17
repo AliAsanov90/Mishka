@@ -1,16 +1,34 @@
 
 @import 'variables';
 @import 'mixins';
+
 @import 'blocks/scaffolding';
 @import 'blocks/container';
+@import 'blocks/button';
+
 @import 'blocks/header/main-nav';
 @import 'blocks/header/site-list';
 @import 'blocks/header/user-list';
 @import 'blocks/header/offers-list';
-@import 'blocks/main/page-title';
-@import 'blocks/main/product-types';
-@import 'blocks/main/weekly-product';
-@import 'blocks/main/about-us';
-@import 'blocks/main/reviews';
-@import 'blocks/main/contacts';
 
+@import 'blocks/index-main/page-title';
+@import 'blocks/index-main/product-types';
+@import 'blocks/index-main/weekly-product';
+@import 'blocks/index-main/about-us';
+@import 'blocks/index-main/reviews';
+@import 'blocks/index-main/contacts';
+
+@import 'blocks/footer/page-footer';
+@import 'blocks/footer/social';
+@import 'blocks/footer/copyright';
+
+@import 'blocks/catalog-main/products';
+@import 'blocks/catalog-main/production';
+@import 'blocks/catalog-main/product';
+
+@import 'blocks/form-main/order-form';
+@import 'blocks/form-main/type';
+@import 'blocks/form-main/color';
+@import 'blocks/form-main/fullname';
+@import 'blocks/form-main/contact-info';
+@import 'blocks/form-main/extra';

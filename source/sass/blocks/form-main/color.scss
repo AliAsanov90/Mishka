@@ -1,0 +1,19 @@
+
+.color__list {
+  @include reset-list;
+}
+
+@media (min-width: $tablet-width) {
+  .color {
+    display: flex;
+  }
+
+  .color__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .color__item {
+    width: 250px;
+  }
+}

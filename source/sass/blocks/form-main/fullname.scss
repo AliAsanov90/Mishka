@@ -1,0 +1,19 @@
+
+.fullname__list {
+  @include reset-list;
+}
+
+.fullname__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .fullname {
+    display: flex;
+  }
+
+  .fullname__item {
+    display: block;
+  }
+}

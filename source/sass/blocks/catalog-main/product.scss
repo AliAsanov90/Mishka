@@ -1,0 +1,11 @@
+
+@media (min-width: $tablet-width) {
+  .product__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product__price {
+    margin-top: auto;
+  }
+}
