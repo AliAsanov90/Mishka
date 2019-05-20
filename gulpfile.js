@@ -1,9 +1,11 @@
 
 const gulp = require('gulp');
+const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 
 function style() {
   return gulp.src('source/sass/style.scss')
+  .pipe(plumber())
   .pipe(sass())
   .pipe(gulp.dest('source/css'));
 }

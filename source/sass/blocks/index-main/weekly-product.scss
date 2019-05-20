@@ -2,7 +2,16 @@
 .weekly-product {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 30px;
+  position: relative;
+
+  &::after {
+    content: url('../img/wavy-line.svg');
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    height: 7px;
+  }
 }
 
 .weekly-product__heading2 {
@@ -10,15 +19,54 @@
 }
 
 .weekly-product__title {
+  font-family: $font-bold;
+  font-size: 25px;
+  line-height: 30px;
   margin: 0;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.weekly-product__indicator {
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $light-green;
+}
+
+.weekly-product__info {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.weekly-product__params {
+  width: 100%;
+  line-height: 20px;
+  margin-bottom: 30px;
+  border-collapse: collapse;
+
+  tr {
+    height: 40px;
+    border-bottom: 1px solid #ececec;
+  }
+}
+
+.weekly-product__field {
+  padding-right: 7px;
+}
+
+.weekly-product__price {
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 24px;
+  display: block;
+  text-align: center;
+  margin: 25px 0;
 }
 
 .weekly-product__image2 {
   display: none;
-}
-
-.weekly-product__order {
-  display: block;
 }
 
 @media (min-width: $tablet-width) {

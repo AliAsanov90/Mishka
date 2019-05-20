@@ -3,6 +3,44 @@
   @include reset-list;
 }
 
+.product-types__item {
+  font-family: $font-bold;
+  font-size: 19px;
+  line-height: 24px;
+  padding: 25px 0;
+  padding-left: 30px;
+  color: #fff;
+  position: relative;
+
+  &--interior {
+    background-color: $light-green;
+
+    &::after {
+      content: url('../img/interior.svg');
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      width: 40px;
+      height: 62px;
+      opacity: 0.3;
+    }
+  }
+
+  &--toy {
+    background-color: $dark-green;
+
+    &::after {
+      content: url('../img/toy.svg');
+      position: absolute;
+      top: 20px;
+      right: 25px;
+      width: 60px;
+      height: 60px;
+      opacity: 0.3;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .product-types__list {
     display: flex;

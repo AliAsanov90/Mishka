@@ -2,19 +2,72 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 55px;
+  position: relative;
+
+  &::after {
+    content: url('../img/wavy-line.svg');
+    position: absolute;
+    bottom: -30px;
+    left: -30px;
+    height: 7px;
+  }
 }
 
 .reviews__title {
+  font-family: $font-bold;
+  font-size: 25px;
+  line-height: 30px;
   margin: 0;
+  margin-bottom: 25px;
+  color: #000000;;
 }
 
 .reviews__list {
   @include reset-list;
 }
 
+.reviews__text {
+  line-height: 30px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.reviews__author-name {
+  font-family: $font-bold;
+  font-size: 17px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reviews__author-id {
+  font-size: 17px;
+}
+
+.reviews__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+.reviews__prev,
+.reviews__next {
+  padding: 10px 40px;
+  border: 1px solid #ececec;
+  background-color: transparent;
+}
+
+.reviews__prev {
+  border-right: none;
+}
+
 .reviews__write1 {
   display: none;
+}
+
+.reviews__write2 {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {

@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="container">
+  <header>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="http://placehold.it/90x40" width="90" height="40" alt="Мишка" >
+          <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" >
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Кнопка открытия/закрытия меню</span>
+        </button>
       </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -27,10 +29,10 @@
         </li>
       </ul>
       <ul class="main-nav__list user-list">
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--search">
           <a>Поиск по сайту</a>
         </li>
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--cart">
           <a>Корзина: пока пуста</a>
         </li>
       </ul>
@@ -55,11 +57,11 @@
     </h1>
     <nav class="product-types">
       <ul class="product-types__list">
-        <li class="product-types__item">
-          <a>Предметы интерьера</a>
+        <li class="product-types__item product-types__item--interior">
+          <a>Предметы <br> интерьера</a>
         </li>
-        <li class="product-types__item">
-          <a>Детские игрушки</a>
+        <li class="product-types__item product-types__item--toy">
+          <a>Детские <br> игрушки</a>
         </li>
       </ul>
     </nav>
@@ -101,7 +103,7 @@
               <td class="weekly-product__value">15 см</td>
             </tr>
           </table>
-          <img class="weekly-product__image1" src="http://placehold.it/525x635" width="525" height="635" alt="Вязаные корзинки">
+          <img class="weekly-product__image1" src="img/triple-set-mobile.jpg" width="260" height="315" alt="Вязаные корзинки">
           <b class="weekly-product__price">Цена: 990 руб.</b>
           <a class="weekly-product__order button" href="#0">Заказать</a>
         </div>
@@ -114,24 +116,24 @@
       <h2 class="about-us__title">Коротко о нас:</h2>
       <ul class="about-us__list">
         <div class="about-us__column-left">
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--icon1">
             Экологически <br> чистые материалы
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--icon3">
             Скандинавский стиль <br> по российской цене
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--icon5">
             Увеличивает лайки <br> на фотографиях
           </li>
         </div>
         <div class="about-us__column-right">
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--icon2">
             Связано вручную с <br> любовью и умилением
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--icon4">
             Поддержка отечественного <br> производителя
           </li>
-          <li class="about-us__item">
+          <li class="about-us__item about-us__item--icon6">
             Поставляется в <br> подарочной упаковке
           </li>
         </div>
@@ -154,8 +156,14 @@
         </li>
       </ul>
       <p class="reviews__buttons slider__buttons">
-        <button class="reviews__prev" type="button">Arrow Left</button>
-        <button class="reviews__next" type="button">Arrow Right</button>
+        <button class="reviews__prev" type="button">
+          <span class="visually-hidden">Предыдущий отзыв</span>
+          <img src="img/huge-arrow-left.svg" width="52" height="30" alt="Предыдущий отзыв">
+        </button>
+        <button class="reviews__next" type="button">
+          <span class="visually-hidden">Следующий отзыв</span>
+          <img src="img/huge-arrow-right.svg" width="52" height="30" alt="Следующий отзыв">
+        </button>
       </p>
       <a class="reviews__write2 button" href="#0">Написать</a>
     </section>
@@ -183,7 +191,7 @@
       </div>
 
       <a class="contacts__link" href="#0">
-        <img class="contacts__image" src="http://placehold.it/525x460" width="525" height="455" alt="Как нас найти">
+        <img class="contacts__image" src="img/map-mobile.jpg" width="320" height="455" alt="Как нас найти">
       </a>
       <a class="contacts__write2 button container" href="#0">Напишите нам</a>
     </section>
@@ -194,22 +202,34 @@
     <a class="page-footer__logo" href="#0">
       <img class="page-footer__image" src="http://placehold.it/105x35" width="105" height="35" alt="Логотип Мишка">
     </a>
-    <div class="page-footer__social social">
+    <div class="page-footer__social social container">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">Instagram</a>
+          <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">
+            <span class="visually-hidden">Instagram</span>
+            <img src="img/insta.svg" width="22" height="22" alt="Instagram">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
+          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">
+            <span class="visually-hidden">Facebook</span>
+            <img src="img/facebook.svg" width="15" height="30" alt="Facebook">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
+          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
+            <span class="visually-hidden">Twitter</span>
+            <img src="img/twitter.svg" width="22" height="22" alt="Twitter">
+          </a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
       <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTMLacademy</a>
+      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
+        <span class="visually-hidden">HTMLacademy</span>
+        <img src="img/htmlacademy.svg" width="28" height="35" alt="HTMLacademy">
+      </a>
     </div>
   </footer>
 

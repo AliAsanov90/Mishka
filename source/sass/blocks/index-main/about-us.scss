@@ -1,10 +1,56 @@
 
+.about-us {
+  margin-top: 70px;
+}
+
+.about-us__title {
+  font-family: $font-bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 25px;
+  color: #000;
+}
+
 .about-us__list {
   @include reset-list;
 }
 
 .about-us__item {
-  padding-top: 15px;
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 20px;
+  margin-top: 25px;
+  color: #000;
+
+  &::before {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &--icon1::before {
+    content: url('../img/icon1.svg');
+  }
+
+  &--icon2::before {
+    content: url('../img/icon2.svg');
+  }
+
+  &--icon3::before {
+    content: url('../img/icon3.svg');
+  }
+
+  &--icon4::before {
+    content: url('../img/icon4.svg');
+  }
+
+  &--icon5::before {
+    content: url('../img/icon5.svg');
+  }
+
+  &--icon6::before {
+    content: url('../img/icon6.svg');
+  }
 }
 
 @media (min-width: $tablet-width) {
