@@ -54,6 +54,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-us {
+    margin-top: 120px;
+  }
+
   .about-us__list {
     display: flex;
     justify-content: space-between;

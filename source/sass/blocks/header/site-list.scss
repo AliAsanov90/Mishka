@@ -23,9 +23,25 @@
   .site-list {
     @include reset-list;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     order: 3;
-    width: 310px;
+    width: 368px;
+    padding-left: 50px;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+  }
+
+  .site-list__item {
+    font-size: 15px;
+    padding: 10px 0;
+    padding-left: 0;
+    border-bottom: none;
+
+    &:first-child {
+      border-top: none;
+      margin-right: 35px;
+    }
   }
 }
 

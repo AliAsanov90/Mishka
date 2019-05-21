@@ -36,7 +36,37 @@
     display: flex;
     justify-content: space-between;
     order: 2;
-    width: 350px;
+    width: 400px;
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  .user-list__item {
+
+    &--search {
+      padding-left: 83px;
+      border-bottom: none;
+      border-right: 1px solid #e7e7e7;
+      border-left: 1px solid #e7e7e7;
+      a {
+        display: none;
+      }
+
+      &::before {
+        top: 33px;
+      }
+    }
+
+    &--cart {
+      display: flex;
+      align-items: center;
+      padding-left: 80px;
+      padding-right: 50px;
+      border-bottom: none;
+
+      &::before {
+        top: 33px;
+      }
+    }
   }
 }
 

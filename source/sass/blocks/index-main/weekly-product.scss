@@ -73,11 +73,20 @@
   .weekly-product {
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
+
+    &::after {
+      content: url('../img/zigzag-line-desktop.svg');
+      bottom: -70px;
+      left: -50px;
+      height: 18px;
+    }
   }
 
   .weekly-product__heading1 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
 
   .weekly-product__heading2 {
@@ -86,16 +95,38 @@
 
   .weekly-product__title {
     width: 430px;
+    margin: 0;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   .weekly-product__indicator {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    line-height: 17px;
+
   }
 
   .weekly-product__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .weekly-product__description {
+    width: 290px;
+  }
+
+  .weekly-product__info {
+    margin: 0;
+    margin-bottom: 45px;
+  }
+
+  .weekly-product__price {
+    margin-top: 55px;
+    margin-bottom: 35px;
   }
 
   .weekly-product__image1 {

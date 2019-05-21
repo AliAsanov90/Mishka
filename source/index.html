@@ -14,7 +14,9 @@
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" >
+          <img class="main-nav__logo-image--mobile" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" >
+          <img class="main-nav__logo-image--tablet" src="img/mishka-logo-tablet.svg" width="112" height="46" alt="Логотип Мишка" >
+          <img class="main-nav__logo-image--desktop" src="img/mishka-logo-desktop.svg" width="86" height="35" alt="Логотип Мишка" >
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Кнопка открытия/закрытия меню</span>
@@ -51,20 +53,23 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-title">
-      Милые штуки ручной <br>
-      работы для дома
-    </h1>
-    <nav class="product-types">
-      <ul class="product-types__list">
-        <li class="product-types__item product-types__item--interior">
-          <a>Предметы <br> интерьера</a>
-        </li>
-        <li class="product-types__item product-types__item--toy">
-          <a>Детские <br> игрушки</a>
-        </li>
-      </ul>
-    </nav>
+    <!-- Section "Showcase" -->
+    <section class="showcase">
+      <h1 class="showcase__title">
+        Милые штуки ручной <br>
+        работы для дома
+      </h1>
+      <nav class="showcase__product-types product-types">
+        <ul class="product-types__list">
+          <li class="product-types__item product-types__item--interior">
+            <a>Предметы <br> интерьера</a>
+          </li>
+          <li class="product-types__item product-types__item--toy">
+            <a>Детские <br> игрушки</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
 
     <!-- Section "Товар недели" -->
     <section class="weekly-product container">
@@ -107,7 +112,7 @@
           <b class="weekly-product__price">Цена: 990 руб.</b>
           <a class="weekly-product__order button" href="#0">Заказать</a>
         </div>
-        <img class="weekly-product__image2 " src="http://placehold.it/525x635" width="525" height="635" alt="Вязаные корзинки">
+        <img class="weekly-product__image2 " src="img/triple-set-tablet.jpg" width="333" height="404" alt="Вязаные корзинки">
       </div>
     </section>
 
