@@ -73,5 +73,13 @@
 @media (min-width: $desktop-width) {
   .user-list {
     order: 3;
+    width: 350px;
+    margin-right: 100px;
+  }
+
+  .user-list__item {
+    &--cart {
+      padding-right: 0;
+    }
   }
 }

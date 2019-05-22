@@ -28,21 +28,21 @@
       position: absolute;
       left: 0;
       right: 0;
-      bottom: 7.5px; /*h/2*/
-      height: 15px; /*h*/
+      bottom: 10px; /*h/2*/
+      height: 20px; /*h*/
       background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
-      background-size: 30px 15px; /*h h*/
-      background-position: 0px 7.5px; /*0 h/2*/
+      background-size: 38px 20px; /*h h*/
+      background-position: 0px 10px; /*0 h/2*/
       background-repeat: repeat-x;
       z-index: 1;
     }
 
     &::after {
-      background: radial-gradient(closest-side, transparent, transparent 50%,#fff 50%);
-      background-size: 30px 15px; /*h h*/
-      background-position: 15px -7.5px; /*h/2 -h/2*/
+      background: radial-gradient(closest-side, transparent, transparent 40%,#fff 40%);
+      background-size: 38px 20px; /*h h*/
+      background-position: 19px -10px; /*h/2 -h/2*/
       background-repeat: repeat-x;
-      bottom: -7.5px;
+      bottom: -10px;
     }
 
     // Animate Wave
@@ -64,5 +64,41 @@
     line-height: 50px;
     min-height: 470px;
     padding-top: 155px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .showcase {
+    background-image: url('../img/hero-desktop.jpg');
+    background-position: center top 0px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10px; /*h/2*/
+      height: 20px; /*h*/
+      background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
+      background-size: 50px 20px; /*h h*/
+      background-position: 0px 10px; /*0 h/2*/
+      background-repeat: repeat-x;
+      z-index: 1;
+    }
+
+    &::after {
+      background: radial-gradient(closest-side, transparent, transparent 40%,#fff 40%);
+      background-size: 50px 20px; /*h h*/
+      background-position: 25px -10px; /*h/2 -h/2*/
+      background-repeat: repeat-x;
+      bottom: -10px;
+    }
+  }
+
+  .showcase__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

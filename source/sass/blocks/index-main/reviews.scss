@@ -83,7 +83,7 @@
     background-repeat: no-repeat;
 
     &::after {
-      content: url('../img/zigzag-line-desktop.svg');
+      content: url('../img/zigzag-line-tablet.svg');
       bottom: -85px;
       left: 0px;
       height: 18px;
@@ -147,6 +147,14 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    width: 875px;
+    width: 1050px;
+    margin: 0 auto;
+    padding-left: 125px;
+    box-sizing: border-box;
+  }
+
+  .reviews__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

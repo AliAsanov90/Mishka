@@ -93,6 +93,8 @@
 @media (min-width: $desktop-width) {
   .main-nav__wrapper {
     order: 2;
+    width: 150px;
+    padding: 8px 0;
   }
 
   .main-nav__logo-image--tablet {
@@ -105,5 +107,6 @@
 
   .main-nav__delivery {
     order: 5;
+    right: 100px;
   }
 }

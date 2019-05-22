@@ -6,9 +6,25 @@
 @media (min-width: $desktop-width) {
   .offers-list {
     @include reset-list;
+    font-family: $font-bold;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     order: 4;
     width: 350px;
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    z-index: 1;
+    color: #000;
+  }
+
+  .offers-list__item {
+    &:first-child {
+      padding-right: 30px;
+    }
+
+    &:last-child {
+      padding: 0 30px;
+    }
   }
 }

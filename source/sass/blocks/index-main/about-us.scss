@@ -80,3 +80,26 @@
     margin-bottom: 55px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .about-us {
+    width: 700px;
+    padding: 0 175px;
+    margin-top: 155px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .about-us__column-left,
+  .about-us__column-right {
+    width: 350px;
+  }
+
+  .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
