@@ -58,6 +58,13 @@
     margin-top: 120px;
   }
 
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
   .about-us__list {
     display: flex;
     justify-content: space-between;
@@ -65,6 +72,11 @@
 
   .about-us__column-left,
   .about-us__column-right {
-    width: 330px;
+    width: 334px;
+  }
+
+  .about-us__item {
+    margin-top: 0px;
+    margin-bottom: 55px;
   }
 }

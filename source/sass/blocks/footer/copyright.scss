@@ -17,3 +17,10 @@
   align-items: center;
   padding-left: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 185px;
+    padding: 0;
+  }
+}

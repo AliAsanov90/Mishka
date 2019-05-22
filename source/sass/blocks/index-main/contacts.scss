@@ -42,20 +42,73 @@
 
 .contacts__image {
   height: 455px;
+
+  &--tablet {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
+  .contacts {
+    margin-top: 145px;
+  }
+
+  .contacts__title {
+    font-size: 43px;
+    line-height: 50px;
+    color: #000;
+    margin-bottom: 50px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -18px;
+      right: 46px;
+      width: 4px;
+      height: 81px;
+      background-color: #000000;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -14px;
+      right: 3px;
+      width: 0;
+      height: 0;
+      border-top: 20px solid transparent;
+      border-left: 40px solid $light-green;
+      border-bottom: 20px solid transparent;
+    }
+  }
+
   .contacts__info {
     display: flex;
+    align-items: flex-start;
+    margin-bottom: 55px;
+  }
+
+  .contacts__email {
+    margin: 0;
   }
 
   .contacts__image {
     width: 100%;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: flex;
+    }
   }
 
   .contacts__write2 {
     display: block;
     width: 230px;
+    margin: 55px auto;
   }
 }
 

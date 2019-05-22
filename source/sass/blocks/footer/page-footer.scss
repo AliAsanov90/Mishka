@@ -8,12 +8,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__container {
     display: flex;
     justify-content: space-between;
+    width: 668px;
+    margin: 0 auto;
+    padding: 30px 0;
   }
 
   .page-footer__logo {
     display: flex;
+    width: 105px;
   }
 }

@@ -44,6 +44,19 @@
       background-repeat: repeat-x;
       bottom: -7.5px;
     }
+
+    // Animate Wave
+    // &::before,
+    // &::after {
+    //   left: -30px;
+    //   animation: animateWave 1.5s linear infinite;
+    // }
+
+    // @keyframes animateWave {
+    //   to {
+    //     transform: translateX(30px);
+    //   }
+    // }
   }
 
   .showcase__title {
