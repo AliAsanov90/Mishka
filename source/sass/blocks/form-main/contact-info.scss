@@ -1,4 +1,10 @@
 
+.contact-info__email {
+  &::after {
+    width: 180px;
+  }
+}
+
 .contact-info__list {
   @include reset-list;
 }

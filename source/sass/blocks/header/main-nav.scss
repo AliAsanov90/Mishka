@@ -91,10 +91,15 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
   .main-nav__wrapper {
     order: 2;
     width: 150px;
     padding: 8px 0;
+    border-bottom: none;
   }
 
   .main-nav__logo-image--tablet {

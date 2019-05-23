@@ -1,24 +1,112 @@
 
+.production {
+  padding-bottom: 30px;
+  margin-bottom: 60px;
+  border: 1px solid #ededed;
+  position: relative;
+
+  &::before {
+    content: url('../img/play.svg');
+    position: absolute;
+    top: 135px;
+    left: 80px;
+  }
+}
+
+.production__title1 {
+  font-family: $font-bold;
+  font-size: 17px;
+  padding-left: 90px;
+  margin: 25px 0;
+  background-image: url('../img/video.svg');
+  background-repeat: no-repeat;
+  background-size: 35px 30px;
+  background-position: 35px 5px;
+}
+
 .production__title2 {
   display: none;
 }
 
+.production__wrapper {
+  margin-top: 25px;
+}
+
+.production__info {
+  font-size: 13px;
+  padding-left: 30px;
+  padding-right: 40px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.production__order {
+  width: 190px;
+}
+
+.production__video {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .production {
+    padding-bottom: 45px;
+    margin-top: 50px;
+
+    &::before {
+      top: 190px;
+      left: 280px;
+    }
+  }
+
   .production__title1 {
     display: none;
   }
 
   .production__title2 {
+    font-family: $font-bold;
+    font-size: 20px;
     display: flex;
+    padding-left: 65px;
+    margin: 35px 0;
+    color: #000;
+    background-image: url('../img/video.svg');
+    background-repeat: no-repeat;
+    background-size: 35px 30px;
+    background-position: 0 -3px;
+  }
+
+  .production__info {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 0;
+    margin-bottom: 40px;
   }
 
   .production__video {
     width: 100%;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: flex;
+    }
+
+    &--desktop {
+      display: none;
+    }
   }
 
   .production__wrapper {
-    width: 85%;
-    margin: 0 auto;
+    padding: 0 40px;
   }
 
   .production__order {
@@ -30,13 +118,41 @@
   .production {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 0;
+    margin-top: 60px;
+    margin-bottom: 100px;
   }
 
   .production__video {
     width: 680px;
+
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: flex;
+    }
   }
 
   .production__wrapper {
-    width: 235px;
+    width: 370px;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .production__title2 {
+    padding-top: 50px;
+    padding-left: 0;
+    margin-top: 20px;
+    background-position: 0 0;
+  }
+
+  .production__info {
+    margin-bottom: 50px;
   }
 }

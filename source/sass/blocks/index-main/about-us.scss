@@ -76,8 +76,18 @@
   }
 
   .about-us__item {
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100px;
     margin-top: 0px;
     margin-bottom: 55px;
+
+    &::before {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -86,6 +96,7 @@
     width: 700px;
     padding: 0 175px;
     margin-top: 155px;
+    margin-bottom: 25px;
   }
 
   .about-us__title {

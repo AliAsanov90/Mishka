@@ -151,10 +151,30 @@
     margin: 0 auto;
     padding-left: 125px;
     box-sizing: border-box;
+
+    &::after {
+      content: url('../img/zigzag-line-desktop.svg');
+      bottom: -90px;
+      left: -100px;
+      height: 25px;
+    }
   }
 
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .reviews__wrapper {
+    width: 875px;
+    align-items: center;
+  }
+
+  .reviews__list {
+    width: 780px;
+  }
+
+  .reviews__text {
+    margin-bottom: 40px;
   }
 }

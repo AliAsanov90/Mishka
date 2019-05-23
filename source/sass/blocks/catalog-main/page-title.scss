@@ -1,0 +1,57 @@
+
+.page-title {
+  font-family: $font-bold;
+  font-size: 27px;
+  line-height: 30px;
+  min-height: 175px;
+  margin: 0;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  background-color: #f1f1f1;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-title {
+    font-size: 43px;
+    line-height: 50px;
+    min-height: 225px;
+    margin-bottom: 75px;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 10px; /*h/2*/
+      height: 20px; /*h*/
+      background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
+      background-size: 38px 20px; /*h h*/
+      background-position: 0px 10px; /*0 h/2*/
+      background-repeat: repeat-x;
+      z-index: 1;
+    }
+
+    &::after {
+      background: radial-gradient(closest-side, transparent, transparent 40%,#fff 40%);
+      background-size: 38px 20px; /*h h*/
+      background-position: 19px -10px; /*h/2 -h/2*/
+      background-repeat: repeat-x;
+      bottom: -10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-title {
+    font-size: 53px;
+    line-height: 57px;
+    min-height: 260px;
+    margin-bottom: 120px;
+  }
+}

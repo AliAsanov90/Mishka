@@ -10,13 +10,17 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="container">
+  <header>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="http://placehold.it/90x40" width="90" height="40" alt="Мишка" >
+          <img class="main-nav__logo-image--mobile" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" >
+          <img class="main-nav__logo-image--tablet" src="img/mishka-logo-tablet.svg" width="112" height="46" alt="Логотип Мишка" >
+          <img class="main-nav__logo-image--desktop" src="img/mishka-logo-desktop.svg" width="150" height="72" alt="Логотип Мишка" >
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Кнопка открытия/закрытия меню</span>
+        </button>
       </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -27,10 +31,10 @@
         </li>
       </ul>
       <ul class="main-nav__list user-list">
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--search">
           <a>Поиск по сайту</a>
         </li>
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--cart">
           <a>Корзина: пока пуста</a>
         </li>
       </ul>
@@ -55,7 +59,9 @@
     <section class="products container">
       <ul class="products__list">
         <li class="products__item product">
-          <img class="product__image" src="http://placehold.it/320x465" width="320" height="465" alt="Зайчик-попрыгайчик">
+          <img class="product__image product__image--mobile" src="img/photo-1-mobile.jpg" width="260" height="195" alt="Зайчик-попрыгайчик">
+          <img class="product__image product__image--tablet" src="img/photo-1-tablet.jpg" width="334" height="334" alt="Зайчик-попрыгайчик">
+          <img class="product__image product__image--desktop" src="img/photo-1-desktop.jpg" width="316" height="462" alt="Зайчик-попрыгайчик">
           <div class="product__info">
             <h2 class="product__title">Зайчик-попрыгайчик</h2>
             <p class="product__params">Рост 30 см, вес 200 г</p>
@@ -63,7 +69,9 @@
           </div>
         </li>
         <li class="products__item product">
-          <img class="product__image" src="http://placehold.it/320x465" width="320" height="465" alt="Корзинка для белья">
+          <img class="product__image product__image--mobile" src="img/photo-2-mobile.jpg" width="260" height="195" alt="Корзинка для белья">
+          <img class="product__image product__image--tablet" src="img/photo-2-tablet.jpg" width="334" height="334" alt="Корзинка для белья">
+          <img class="product__image product__image--desktop" src="img/photo-2-desktop.jpg" width="316" height="462" alt="Корзинка для белья">
           <div class="product__info">
             <h2 class="product__title">Корзинка для белья</h2>
             <p class="product__params">Диаметр 15 см, высота 10 см</p>
@@ -71,7 +79,9 @@
           </li>
         </div>
         <li class="products__item product">
-          <img class="product__image" src="http://placehold.it/320x465" width="320" height="465" alt="Большая корзинка для игрушек">
+          <img class="product__image product__image--mobile" src="img/photo-3-mobile.jpg" width="260" height="195" alt="Большая корзинка для игрушек">
+          <img class="product__image product__image--tablet" src="img/photo-3-tablet.jpg" width="334" height="334" alt="Большая корзинка для игрушек">
+          <img class="product__image product__image--desktop" src="img/photo-3-desktop.jpg" width="316" height="462" alt="Большая корзинка для игрушек">
           <div class="product__info">
             <h2 class="product__title">Большая корзинка <br> для игрушек</h2>
             <p class="product__params">Диаметр 30 см, высота 30 см</p>
@@ -84,11 +94,9 @@
     <!-- Section Video -->
     <section class="production container">
       <h2 class="production__title1">Процесс производства</h2>
-      <video class="production__video" controls width="260">
-        <source src="/media/examples/flower.webm" type="video/webm">
-        <source src="/media/examples/flower.mp4" type="video/mp4">
-        Sorry, your browser doesn't support embedded videos.
-      </video>
+      <video class="production__video production__video--mobile" width="260" height="150" poster="img/video-mobile.jpg"></video>
+      <video class="production__video production__video--tablet" width="668" height="455" poster="img/video-tablet.jpg"></video>
+      <video class="production__video production__video--desktop" width="682" height="455" poster="img/video-desktop.jpg"></video>
       <div class="production__wrapper">
         <h2 class="production__title2">Процесс производства</h2>
         <p class="production__info">
@@ -101,25 +109,39 @@
 
   <!-- Footer -->
   <footer class="page-footer">
-    <a class="page-footer__logo" href="#0">
-      <img class="page-footer__image" src="http://placehold.it/105x35" width="105" height="35" alt="Логотип Мишка">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">Instagram</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTMLacademy</a>
+    <div class="page-footer__container">
+      <a class="page-footer__logo" href="#0">
+        <img class="page-footer__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка">
+      </a>
+      <div class="page-footer__social social container">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">
+              <span class="visually-hidden">Instagram</span>
+              <img src="img/insta.svg" width="22" height="22" alt="Instagram">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+              <img src="img/facebook.svg" width="15" height="30" alt="Facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
+              <span class="visually-hidden">Twitter</span>
+              <img src="img/twitter.svg" width="22" height="22" alt="Twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
+          <span class="visually-hidden">HTMLacademy</span>
+          <img src="img/htmlacademy.svg" width="28" height="35" alt="HTMLacademy">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

@@ -4,12 +4,14 @@
 }
 
 .products__item {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  border: 1px solid #ededed;
 }
 
 @media (min-width: $tablet-width) {
   .products__item {
     display: flex;
+    margin-bottom: 55px;
   }
 }
 
@@ -21,5 +23,6 @@
 
   .products__item {
     display: block;
+    width: 316px;
   }
 }

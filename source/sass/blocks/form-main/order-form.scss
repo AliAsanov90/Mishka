@@ -1,5 +1,32 @@
 
+.order-form__title {
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $light-green;
+  display: block;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 0;
+    width: 198px;
+    height: 1px;
+    background-color: $light-green;
+  }
+}
+
 @media (min-width: $tablet-width) {
+  .order-form__title {
+    &::after {
+      display: none;
+    }
+  }
+
   .order-form__wrapper {
     display: flex;
     flex-direction: row-reverse;

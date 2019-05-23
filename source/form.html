@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="container">
+  <header>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-image" src="http://placehold.it/90x40" width="90" height="40" alt="Мишка" >
+          <img class="main-nav__logo-image--mobile" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" >
+          <img class="main-nav__logo-image--tablet" src="img/mishka-logo-tablet.svg" width="112" height="46" alt="Логотип Мишка" >
+          <img class="main-nav__logo-image--desktop" src="img/mishka-logo-desktop.svg" width="150" height="72" alt="Логотип Мишка" >
         </a>
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Кнопка открытия/закрытия меню</span>
+        </button>
       </div>
       <ul class="main-nav__list site-list">
         <li class="site-list__item">
@@ -27,10 +31,10 @@
         </li>
       </ul>
       <ul class="main-nav__list user-list">
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--search">
           <a>Поиск по сайту</a>
         </li>
-        <li class="user-list__item">
+        <li class="user-list__item user-list__item--cart">
           <a>Корзина: пока пуста</a>
         </li>
       </ul>
@@ -48,59 +52,59 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="form-page">
     <h1 class="page-title">Вязание на заказ</h1>
-    <p class="intro container">
+    <p class="page-intro container">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
     </p>
     <form class="order-form container" action="https://echo.htmlacademy.ru" method="GET">
       <!-- Type choice -->
       <div class="order-form__type type">
-        <h2 class="type__title">Тип</h2>
+        <h2 class="order-form__title type__title">Тип</h2>
         <ul class="type__list">
           <li class="type__item">
-            <input class="type__input" type="radio" name="type" id="accessory" value="accessory">
+            <input class="type__input visually-hidden" type="radio" name="type" id="accessory" value="accessory">
             <label class="type__label" for="accessory">Аксессуар для интерьера</label>
           </li>
           <li class="type__item">
-            <input class="type__input" type="radio" name="type" id="toy" value="toy">
+            <input class="type__input visually-hidden" type="radio" name="type" id="toy" value="toy">
             <label class="type__label" for="toy">Детская игрушка</label>
           </li>
         </ul>
       </div>
       <!-- Color choice -->
       <div class="order-form__color color">
-        <h2 class="color__title">Цвет</h2>
+        <h2 class="order-form__title color__title">Цвет</h2>
         <ul class="color__list">
           <li class="color__item">
-            <input class="color__input" type="checkbox" name="white" id="white" value="white">
+            <input class="color__input visually-hidden" type="checkbox" name="white" id="white" value="white">
             <label class="color__label" for="white">Белый</label>
           </li>
           <li class="color__item">
-            <input class="color__input" type="checkbox" name="gray" id="gray" value="gray">
+            <input class="color__input visually-hidden" type="checkbox" name="gray" id="gray" value="gray">
             <label class="color__label" for="gray">Серый</label>
           </li>
           <li class="color__item">
-            <input class="color__input" type="checkbox" name="tiffany" id="tiffany" value="tiffany">
+            <input class="color__input visually-hidden" type="checkbox" name="tiffany" id="tiffany" value="tiffany">
             <label class="color__label" for="tiffany">"Тиффани"</label>
           </li>
           <li class="color__item">
-            <input class="color__input" type="checkbox" name="black" id="black" value="black">
+            <input class="color__input visually-hidden" type="checkbox" name="black" id="black" value="black">
             <label class="color__label" for="black">Черный</label>
           </li>
           <li class="color__item">
-            <input class="color__input" type="checkbox" name="pink" id="pink" value="pink">
+            <input class="color__input visually-hidden" type="checkbox" name="pink" id="pink" value="pink">
             <label class="color__label" for="pink">Розовый</label>
           </li>
           <li class="color__item">
-            <input class="color__input" type="checkbox" name="orange" id="orange" value="orange">
+            <input class="color__input visually-hidden" type="checkbox" name="orange" id="orange" value="orange">
             <label class="color__label" for="orange">Оранжевый</label>
           </li>
         </ul>
       </div>
       <!-- Full Name -->
       <div class="order-form__fullname fullname">
-        <h2 class="fullname__title">ФИО</h2>
+        <h2 class="order-form__title fullname__title">ФИО</h2>
         <ul class="fullname__list">
           <li class="fullname__item">
             <label class="fullname__label" for="name">Имя:</label>
@@ -121,13 +125,13 @@
         <ul class="contact-info__list">
           <li class="contact-info__item">
             <h2 class="contact-info__title">
-              <label for="tel" class="contact-info__label">Тел</label>
+              <label for="tel" class="order-form__title contact-info__tel">Тел</label>
             </h2>
             <input class="contact-info__input" type="tel" name="tel" id="tel" placeholder="+7 XXX XX XX*">
           </li>
           <li class="contact-info__item">
             <h2 class="contact-info__title">
-              <label for="email" class="contact-info__label">E-mail</label>
+              <label for="email" class="order-form__title contact-info__email">E-mail</label>
             </h2>
             <input class="contact-info__input" type="email" name="email" id="email" placeholder="Ваш Email*">
           </li>
@@ -136,7 +140,7 @@
       <!-- Extra wishes -->
       <div class="order-form__extra extra">
         <h2 class="extra__title">
-          <label class="extra__label" for="extra">Доп</label>
+          <label class="order-form__title extra__label" for="extra">Доп</label>
         </h2>
         <textarea class="extra__text" name="extra" id="extra" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
@@ -149,25 +153,39 @@
 
   <!-- Footer -->
   <footer class="page-footer">
-    <a class="page-footer__logo" href="#0">
-      <img class="page-footer__image" src="http://placehold.it/105x35" width="105" height="35" alt="Логотип Мишка">
-    </a>
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">Instagram</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">Facebook</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">Twitter</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">HTMLacademy</a>
+    <div class="page-footer__container">
+      <a class="page-footer__logo" href="#0">
+        <img class="page-footer__image" src="img/logo-footer.svg" width="102" height="34" alt="Логотип Мишка">
+      </a>
+      <div class="page-footer__social social container">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://instagram.com" target="_blank">
+              <span class="visually-hidden">Instagram</span>
+              <img src="img/insta.svg" width="22" height="22" alt="Instagram">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://facebook.com" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+              <img src="img/facebook.svg" width="15" height="30" alt="Facebook">
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com" target="_blank">
+              <span class="visually-hidden">Twitter</span>
+              <img src="img/twitter.svg" width="22" height="22" alt="Twitter">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru" target="_blank">
+          <span class="visually-hidden">HTMLacademy</span>
+          <img src="img/htmlacademy.svg" width="28" height="35" alt="HTMLacademy">
+        </a>
+      </div>
     </div>
   </footer>
 </body>

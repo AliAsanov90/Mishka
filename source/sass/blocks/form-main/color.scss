@@ -3,6 +3,17 @@
   @include reset-list;
 }
 
+.color__item {
+  padding: 18px 0;
+  padding-left: 60px;
+}
+
+.color__label {
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .color {
     display: flex;
