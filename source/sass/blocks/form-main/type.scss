@@ -49,5 +49,46 @@
 @media (min-width: $tablet-width) {
   .type {
     display: flex;
+    padding: 50px 0;
+  }
+
+  .type__title {
+    flex-basis: 25%;
+    margin-top: 25px;
+  }
+
+  .type__list {
+    flex-basis: 75%;
+  }
+
+  .type__label {
+    font-size: 19px;
+    color: #000;
+  }
+
+  .type__text {
+    width: auto;
+  }
+
+  .type__radio-indicator {
+    width: 50px;
+    height: 50px;
+  }
+
+  .type__input:checked + .type__radio-indicator::before,
+  .type__radio-indicator:focus::before {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .type__title {
+    flex-basis: 16.7%;
+    text-align: center;
+  }
+
+  .type__list {
+    flex-basis: 83.3%;
   }
 }

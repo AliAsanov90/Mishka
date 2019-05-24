@@ -68,14 +68,40 @@
 @media (min-width: $tablet-width) {
   .color {
     display: flex;
+    padding: 45px 50px;
+    background-color: #f1f1f1;
+  }
+
+  .color__title {
+    flex-basis: 25%;
+    margin-top: 25px;
   }
 
   .color__list {
     display: flex;
     flex-wrap: wrap;
+    flex-basis: 75%;
   }
 
   .color__item {
     width: 250px;
+  }
+
+  .color__label {
+    font-size: 19px;
+    color: #000;
+  }
+
+  .color__checkbox-indicator {
+    width: 55px;
+    height: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .color__title {
+  }
+
+  .color__list {
   }
 }

@@ -37,9 +37,41 @@
 @media (min-width: $tablet-width) {
   .fullname {
     display: flex;
+    padding: 50px 0;
+  }
+
+  .fullname__title {
+    flex-basis: 25%;
+    margin-top: 25px;
+  }
+
+  .fullname__list {
+    flex-basis: 75%;
   }
 
   .fullname__item {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px 0;
   }
+
+  .fullname__label {
+    font-size: 19px;
+    color: #000;
+    margin: 0;
+  }
+
+  .fullname__input {
+    font-size: 19px;
+    line-height: 18px;
+    width: 100%;
+    margin-left: 25px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
+  }
+
 }

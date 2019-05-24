@@ -52,7 +52,31 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contact-info {
+    padding: 45px 50px;
+    background-color: #f1f1f1;
+  }
+
   .contact-info__item {
     display: flex;
+  }
+
+  .contact-info__title {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .contact-info__input {
+    font-size: 19px;
+    line-height: 18px;
+    flex-basis: 75%;
+    background-color: transparent;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }

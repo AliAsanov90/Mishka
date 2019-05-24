@@ -3,3 +3,11 @@
   font-size: 13px;
   margin-bottom: 25px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-intro {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}

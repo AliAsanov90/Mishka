@@ -23,5 +23,26 @@
 @media (min-width: $tablet-width) {
   .extra {
     display: flex;
+    padding: 50px 0;
+  }
+
+  .extra__title {
+    flex-basis: 25%;
+    margin: 0;
+  }
+
+  .extra__label {
+    margin-top: 15px;
+  }
+
+  .extra__text {
+    flex-basis: 75%;
+    font-size: 19px;
+    line-height: 18px;
+
+    &::placeholder {
+      font-size: 19px;
+      line-height: 18px;
+    }
   }
 }
