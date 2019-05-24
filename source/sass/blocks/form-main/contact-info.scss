@@ -37,6 +37,18 @@
   &:focus {
     outline: 1px solid $light-green;
   }
+
+  &--tel {
+    background-image: url('../img/phone.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  &--email {
+    background-image: url('../img/email.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
 }
 
 @media (min-width: $tablet-width) {
