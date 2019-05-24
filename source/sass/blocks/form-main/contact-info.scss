@@ -1,12 +1,42 @@
 
+.contact-info__list {
+  @include reset-list;
+}
+
+.contact-info__item {
+  margin-top: 25px;
+}
+
+.contact-info__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.contact-info__tel {
+  margin-bottom: 0;
+}
+
 .contact-info__email {
+  margin-bottom: 0;
+
   &::after {
     width: 180px;
   }
 }
 
-.contact-info__list {
-  @include reset-list;
+.contact-info__input {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #000;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 1px solid $light-green;
+  }
 }
 
 @media (min-width: $tablet-width) {

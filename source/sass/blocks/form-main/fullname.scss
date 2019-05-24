@@ -8,6 +8,32 @@
   flex-direction: column;
 }
 
+.fullname__title {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.fullname__label {
+  font-family: $font-bold;
+  font-size: 17px;
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+.fullname__input {
+  height: 40px;
+  border: none;
+  border-bottom: 2px solid #000;
+
+  &::placeholder {
+    opacity: 0.5;
+  }
+
+  &:focus {
+    outline: 1px solid $light-green;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .fullname {
     display: flex;

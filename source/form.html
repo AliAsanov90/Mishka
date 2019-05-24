@@ -63,12 +63,18 @@
         <h2 class="order-form__title type__title">Тип</h2>
         <ul class="type__list">
           <li class="type__item">
-            <input class="type__input visually-hidden" type="radio" name="type" id="accessory" value="accessory">
-            <label class="type__label" for="accessory">Аксессуар для интерьера</label>
+            <label class="type__label" for="accessory">
+              <input class="type__input visually-hidden" type="radio" name="type" id="accessory" value="accessory">
+              <span class="type__radio-indicator"></span>
+              <span class="type__text">Аксессуар для интерьера</span>
+            </label>
           </li>
           <li class="type__item">
-            <input class="type__input visually-hidden" type="radio" name="type" id="toy" value="toy">
-            <label class="type__label" for="toy">Детская игрушка</label>
+            <label class="type__label" for="toy">
+              <input class="type__input visually-hidden" type="radio" name="type" id="toy" value="toy">
+              <span class="type__radio-indicator"></span>
+              Детская игрушка
+            </label>
           </li>
         </ul>
       </div>
@@ -77,28 +83,46 @@
         <h2 class="order-form__title color__title">Цвет</h2>
         <ul class="color__list">
           <li class="color__item">
-            <input class="color__input visually-hidden" type="checkbox" name="white" id="white" value="white">
-            <label class="color__label" for="white">Белый</label>
+            <label class="color__label" for="white">
+              <input class="color__input visually-hidden" type="checkbox" name="white" id="white" value="white">
+              <span class="color__checkbox-indicator"></span>
+              Белый
+            </label>
           </li>
           <li class="color__item">
-            <input class="color__input visually-hidden" type="checkbox" name="gray" id="gray" value="gray">
-            <label class="color__label" for="gray">Серый</label>
+            <label class="color__label" for="gray">
+              <input class="color__input visually-hidden" type="checkbox" name="gray" id="gray" value="gray">
+              <span class="color__checkbox-indicator"></span>
+              Серый
+            </label>
           </li>
           <li class="color__item">
-            <input class="color__input visually-hidden" type="checkbox" name="tiffany" id="tiffany" value="tiffany">
-            <label class="color__label" for="tiffany">"Тиффани"</label>
+            <label class="color__label" for="tiffany">
+              <input class="color__input visually-hidden" type="checkbox" name="tiffany" id="tiffany" value="tiffany">
+              <span class="color__checkbox-indicator"></span>
+              "Тиффани"
+            </label>
           </li>
           <li class="color__item">
-            <input class="color__input visually-hidden" type="checkbox" name="black" id="black" value="black">
-            <label class="color__label" for="black">Черный</label>
+            <label class="color__label" for="black">
+              <input class="color__input visually-hidden" type="checkbox" name="black" id="black" value="black">
+              <span class="color__checkbox-indicator"></span>
+              Черный
+            </label>
           </li>
           <li class="color__item">
-            <input class="color__input visually-hidden" type="checkbox" name="pink" id="pink" value="pink">
-            <label class="color__label" for="pink">Розовый</label>
+            <label class="color__label" for="pink">
+              <input class="color__input visually-hidden" type="checkbox" name="pink" id="pink" value="pink">
+              <span class="color__checkbox-indicator"></span>
+              Розовый
+            </label>
           </li>
           <li class="color__item">
-            <input class="color__input visually-hidden" type="checkbox" name="orange" id="orange" value="orange">
-            <label class="color__label" for="orange">Оранжевый</label>
+            <label class="color__label" for="orange">
+              <input class="color__input visually-hidden" type="checkbox" name="orange" id="orange" value="orange">
+              <span class="color__checkbox-indicator"></span>
+              Оранжевый
+            </label>
           </li>
         </ul>
       </div>
@@ -142,7 +166,7 @@
         <h2 class="extra__title">
           <label class="order-form__title extra__label" for="extra">Доп</label>
         </h2>
-        <textarea class="extra__text" name="extra" id="extra" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <textarea class="extra__text" name="extra" id="extra" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </div>
       <div class="order-form__wrapper">
         <p class="order-form__info">*Поля обязательны для заполнения</p>

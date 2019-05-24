@@ -20,6 +20,20 @@
   }
 }
 
+.order-form__info {
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.order-form__submit {
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 55px;
+  background-color: transparent;
+}
+
 @media (min-width: $tablet-width) {
   .order-form__title {
     &::after {
