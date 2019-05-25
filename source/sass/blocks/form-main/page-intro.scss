@@ -11,3 +11,10 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-intro {
+    padding: 0 175px;
+    box-sizing: border-box;
+  }
+}

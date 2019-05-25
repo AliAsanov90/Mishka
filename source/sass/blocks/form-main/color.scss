@@ -96,12 +96,37 @@
     width: 55px;
     height: 50px;
   }
+
+  .color__input:checked + .color__checkbox-indicator::before,
+  .color__checkbox-indicator:focus::before {
+    top: 27px;
+    left: 9px;
+
+    width: 16px;
+    height: 2px;
+  }
+
+  .color__input:checked + .color__checkbox-indicator::after {
+    top: 22px;
+    left: 17px;
+
+    width: 30px;
+    height: 2px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .color {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .color__title {
+    flex-basis: 16.7%;
+    text-align: center;
   }
 
   .color__list {
+    flex-basis: 83.3%;
   }
 }

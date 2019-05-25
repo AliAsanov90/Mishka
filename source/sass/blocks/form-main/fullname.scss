@@ -22,6 +22,7 @@
 
 .fullname__input {
   height: 40px;
+  padding: 0 5px;
   border: none;
   border-bottom: 2px solid #000;
 
@@ -73,5 +74,15 @@
       line-height: 18px;
     }
   }
+}
 
+@media (min-width: $desktop-width) {
+  .fullname__title {
+    flex-basis: 16.7%;
+    text-align: center;
+  }
+
+  .fullname__list {
+    flex-basis: 66.6%;
+  }
 }

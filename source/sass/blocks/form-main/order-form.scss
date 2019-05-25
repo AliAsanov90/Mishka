@@ -69,8 +69,7 @@
     font-size: 17px;
     line-height: 16px;
     width: auto;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 15px 30px;
     margin: 0;
     margin-bottom: 50px;
   }
@@ -94,5 +93,9 @@
   .order-form__wrapper {
     width: 1050px;
     margin: 0 auto;
+  }
+
+  .order-form__wrapper {
+    width: 56%;
   }
 }

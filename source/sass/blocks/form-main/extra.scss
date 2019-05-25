@@ -46,3 +46,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .extra__title {
+    flex-basis: 16.7%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .extra__text {
+    flex-basis: 66.6%;
+  }
+}
