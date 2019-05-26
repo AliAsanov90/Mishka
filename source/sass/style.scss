@@ -2,15 +2,18 @@
 @import 'variables';
 @import 'mixins';
 
+// General blocks
 @import 'blocks/scaffolding';
 @import 'blocks/container';
 @import 'blocks/button';
 
+// Header blocks
 @import 'blocks/header/main-nav';
 @import 'blocks/header/site-list';
 @import 'blocks/header/user-list';
 @import 'blocks/header/offers-list';
 
+// Blocks in page Index section Main
 @import 'blocks/index-main/showcase';
 @import 'blocks/index-main/product-types';
 @import 'blocks/index-main/weekly-product';
@@ -18,15 +21,18 @@
 @import 'blocks/index-main/reviews';
 @import 'blocks/index-main/contacts';
 
+// Footer blocks
 @import 'blocks/footer/page-footer';
 @import 'blocks/footer/social';
 @import 'blocks/footer/copyright';
 
+// Blocks in page Catalog section Main
 @import 'blocks/catalog-main/page-title';
 @import 'blocks/catalog-main/products';
 @import 'blocks/catalog-main/production';
 @import 'blocks/catalog-main/product';
 
+// Blocks in page Form section Main
 @import 'blocks/form-main/form-page';
 @import 'blocks/form-main/page-intro';
 @import 'blocks/form-main/order-form';
@@ -35,3 +41,7 @@
 @import 'blocks/form-main/fullname';
 @import 'blocks/form-main/contact-info';
 @import 'blocks/form-main/extra';
+
+// Modal "Add to cart" block
+@import 'blocks/modals/modal-cart';
+@import 'blocks/modals/modal-overlay';

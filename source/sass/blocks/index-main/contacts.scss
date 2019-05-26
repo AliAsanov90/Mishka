@@ -42,14 +42,6 @@
 
 .contacts__image {
   height: 455px;
-
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -99,18 +91,6 @@
 
   .contacts__image {
     width: 100%;
-
-    &--mobile {
-      display: none;
-    }
-
-    &--tablet {
-      display: flex;
-    }
-
-    &--desktop {
-      display: none;
-    }
   }
 
   .contacts__write2 {
@@ -153,14 +133,6 @@
 
   .contacts__image {
     width: 525px;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: flex;
-    }
   }
 
   .contacts__info {

@@ -11,12 +11,14 @@
 </head>
 <body>
   <header>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--closed main-nav--no-js">
       <div class="main-nav__wrapper">
         <a class="main-nav__logo">
-          <img class="main-nav__logo-image--mobile" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" >
-          <img class="main-nav__logo-image--tablet" src="img/mishka-logo-tablet.svg" width="112" height="46" alt="Логотип Мишка" >
-          <img class="main-nav__logo-image--desktop" src="img/mishka-logo-desktop.svg" width="150" height="72" alt="Логотип Мишка" >
+          <picture class="main-nav__logo-picture">
+            <source media="(min-width: 1250px)" srcset="img/mishka-logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/mishka-logo-tablet.svg">
+            <img class="main-nav__logo-image" src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип Мишка" >
+          </picture>
         </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Кнопка открытия/закрытия меню</span>
@@ -212,5 +214,7 @@
       </div>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
