@@ -6,6 +6,15 @@
 .products__item {
   margin-bottom: 30px;
   border: 1px solid #ededed;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  }
 }
 
 @media (min-width: $tablet-width) {

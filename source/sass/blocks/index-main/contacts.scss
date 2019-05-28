@@ -29,6 +29,14 @@
   a {
     color: #444444;
     border-bottom: 1px solid $light-green;
+
+    &:hover {
+      color: $light-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

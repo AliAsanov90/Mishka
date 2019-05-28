@@ -3,6 +3,17 @@
   display: none;
 }
 
+.offers-list__item {
+  cursor: pointer;
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .offers-list {
     @include reset-list;

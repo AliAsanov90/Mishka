@@ -79,8 +79,24 @@
     }
   }
 
-  .user-list__link--search {
-    display: none;
+  .user-list__svg {
+    &--search {
+      padding-top: 5px;
+    }
+
+    &--cart {
+      padding-top: 5px;
+    }
+  }
+
+  .user-list__link {
+    &--search {
+      display: none;
+    }
+
+    &--cart {
+      padding-top: 5px;
+    }
   }
 }
 

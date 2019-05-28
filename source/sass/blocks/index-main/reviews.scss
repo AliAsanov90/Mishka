@@ -57,6 +57,15 @@
   padding: 10px 40px;
   border: 1px solid #ececec;
   background-color: transparent;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .reviews__prev {
