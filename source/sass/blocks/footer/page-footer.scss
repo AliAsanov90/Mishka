@@ -18,7 +18,16 @@
 
   .page-footer__logo {
     display: flex;
+    align-items: center;
     width: 105px;
+
+    &:hover {
+      fill: $light-green;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 

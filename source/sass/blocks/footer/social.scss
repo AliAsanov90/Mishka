@@ -14,6 +14,14 @@
 .social__link {
   margin-right: 40px;
 
+  &:hover {
+    fill: $light-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &--twitter {
     margin-right: 0;
   }

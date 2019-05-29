@@ -35,20 +35,41 @@
     opacity: 0.5;
   }
 
+  &:hover {
+    border-bottom-color: $light-green;
+  }
+
   &:focus {
     outline: 1px solid $light-green;
+    border-bottom-color: $light-green;
   }
 
   &--tel {
     background-image: url('../img/phone.svg');
     background-repeat: no-repeat;
     background-position: center right 10px;
+
+    &:hover {
+      background-image: url('../img/phone-colored.svg');
+    }
+
+    &:focus {
+      background-image: url('../img/phone-colored.svg');
+    }
   }
 
   &--email {
     background-image: url('../img/email.svg');
     background-repeat: no-repeat;
     background-position: center right 10px;
+
+    &:hover {
+      background-image: url('../img/email-colored.svg');
+    }
+
+    &:focus {
+      background-image: url('../img/email-colored.svg');
+    }
   }
 }
 

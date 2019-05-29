@@ -11,8 +11,9 @@ const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
 const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
-const uglify = require('gulp-uglify');
 const clean = require('gulp-clean');
+const uglifyJS = require('gulp-terser');
+const htmlmin = require('gulp-htmlmin');
 const server = require('browser-sync').create();
 
 function style() {
@@ -47,7 +48,7 @@ function images() {
 function makeWebp() {
   return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest('build/img'));
+  .pipe(gulp.dest('source/img'));
 }
 
 function sprite() {
@@ -64,12 +65,15 @@ function html() {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(gulp.dest('build'))
+  .pipe(htmlmin({ collapseWhitespace: true }))
+  .pipe(rename({suffix: '-min', extname: '.html'}))
   .pipe(gulp.dest('build'));
 }
 
 function minifyJS() {
   return gulp.src('source/js/**/*.js')
-  .pipe(uglify())
+  .pipe(uglifyJS())
   .pipe(gulp.dest('build/js'));
 }
 
@@ -88,17 +92,18 @@ function watchSass() {
 }
 
 function watchHtml() {
-  gulp.watch('source/*.html', html);
+  gulp.watch('build/*.html').on('change', server.reload);
 }
 
 function del() {
-  return gulp.src('build')
+  return gulp.src('build', {read: false, allowEmpty: true})
   .pipe(clean());
 }
 
 function copy() {
   return gulp.src([
-    'source/fonts/**/*.{woff, woff2}',
+    'source/fonts/**/*.woff',
+    'source/fonts/**/*.woff2',
     'source/img/**'
   ], {
     base: 'source'
@@ -114,10 +119,11 @@ exports.sprite = sprite;
 exports.html = html;
 exports.minifyJS = minifyJS;
 exports.del = del;
-exports.serve = gulp.series(style, serve);
+exports.copy = copy;
+exports.serve = serve;
 exports.watch = watchSass;
 exports.watchHtml = watchHtml;
 
-exports.build = gulp.series(del, copy, minifyNormalize, style, images, makeWebp, sprite, html);
+exports.build = gulp.series(del, gulp.parallel(copy, minifyNormalize, style, images, makeWebp, sprite, minifyJS), html);
 
 

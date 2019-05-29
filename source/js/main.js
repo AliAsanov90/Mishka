@@ -2,7 +2,10 @@
 let mainNav = document.querySelector('.main-nav');
 let mainNavToggle = document.querySelector('.main-nav__toggle');
 let orderButton = document.querySelector('.weekly-product__order');
+let cartButtons = document.querySelectorAll('.product__price');
 let addToCartButton = document.querySelector('.modal-cart__add');
+let bodyTag = document.getElementsByTagName('body')[0];
+
 
 // Cancel display without JS
 mainNav.classList.remove('main-nav--no-js');
@@ -14,8 +17,11 @@ mainNavToggle.addEventListener('click', ev => {
   else mainNav.classList.add('main-nav--closed');
 });
 
-// Show Modal
-orderButton.addEventListener('click', showModalCart);
+// Show same Modal on different pages
+if (bodyTag.id == 'index') {
+  orderButton.addEventListener('click', showModalCart);
+}
+else cartButtons.forEach(button => button.addEventListener('click', showModalCart));
 
 function showModalCart(ev) {
   let modalCart = document.querySelector('.modal-cart');

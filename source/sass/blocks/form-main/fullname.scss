@@ -30,8 +30,13 @@
     opacity: 0.5;
   }
 
+  &:hover {
+    border-bottom-color: $light-green;
+  }
+
   &:focus {
     outline: 1px solid $light-green;
+    border-bottom-color: $light-green;
   }
 }
 

@@ -49,6 +49,14 @@
   padding: 15px 0;
   border: 2px solid #ececec;
   background-color: transparent;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+
+  &:focus {
+    border-color: $light-green;
+  }
 }
 
 .modal-cart__add {
@@ -57,6 +65,10 @@
   padding: 15px 0;
   border: none;
   background-color: $light-green;
+
+  &:hover {
+    background-color: $dark-green;
+  }
 }
 
 @media (min-width: $tablet-width) {

@@ -18,7 +18,7 @@
     padding-top: 20px;
     box-sizing: border-box;
     transition: min-height 0.3s ease-in-out;
-    transition: padding-top 0.3s ease-in-out;
+    transition: padding-top 0.2s ease-in-out;
   }
 
   &:active {
@@ -79,6 +79,7 @@
       transform: translateY(-5px);
       width: 55%;
       transition: transform 0.2s ease-out;
+      transition: padding-top 0.1s ease-out;
     }
 
     &--interior {

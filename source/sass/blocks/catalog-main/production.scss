@@ -14,18 +14,16 @@
     }
   }
 
-  &:active {
-    &::before {
-      opacity: 0.5;
-    }
-  }
-
   &::before {
     content: url('../img/play.svg');
     position: absolute;
     top: 135px;
     left: 80px;
   }
+}
+
+.production__video:active .production::before {
+  opacity: 0.3;
 }
 
 .production__title1 {
