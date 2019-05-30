@@ -18,10 +18,11 @@ mainNavToggle.addEventListener('click', ev => {
 });
 
 // Show same Modal on different pages
-if (bodyTag.id == 'index') {
+if (bodyTag.id == 'index')
   orderButton.addEventListener('click', showModalCart);
-}
-else cartButtons.forEach(button => button.addEventListener('click', showModalCart));
+else if (bodyTag.id == 'catalog')
+  cartButtons.forEach(button => button.addEventListener('click', showModalCart));
+
 
 function showModalCart(ev) {
   let modalCart = document.querySelector('.modal-cart');
@@ -33,7 +34,8 @@ function showModalCart(ev) {
 }
 
 // Hide Modal
-addToCartButton.addEventListener('click', hideModalCart);
+if (bodyTag.id == 'index' || bodyTag.id == 'catalog')
+  addToCartButton.addEventListener('click', hideModalCart);
 
 function hideModalCart(ev) {
   let modalCart = document.querySelector('.modal-cart');
