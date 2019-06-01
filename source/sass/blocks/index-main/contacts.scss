@@ -125,6 +125,7 @@
   }
 
   .contacts__title {
+    width: auto;
     font-size: 53px;
     line-height: 57px;
 
@@ -144,13 +145,20 @@
   }
 
   .contacts__info {
+    width: auto;
     flex-direction: column;
     font-size: 17px;
     margin-bottom: 80px;
   }
 
   .contacts__email {
+    width: auto;
     margin-bottom: 30px;
+  }
+
+  .contacts__address {
+    width: auto;
+    margin-left: 0;
   }
 
   .contacts__write1 {
