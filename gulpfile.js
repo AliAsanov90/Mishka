@@ -85,6 +85,8 @@ function serve() {
     cors: true,
     ui: false
   });
+  // gulp.watch('./source/sass/**/*.scss', {ignoreInitial: false}, style);
+  // gulp.watch('build/*.html').on('change', server.reload);
 }
 
 function watchSass() {
@@ -120,7 +122,7 @@ exports.html = html;
 exports.minifyJS = minifyJS;
 exports.del = del;
 exports.copy = copy;
-exports.serve = serve;
+exports.serve = gulp.parallel(watchSass, watchHtml, serve);
 exports.watch = watchSass;
 exports.watchHtml = watchHtml;
 
