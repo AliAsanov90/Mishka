@@ -79,7 +79,7 @@ function minifyJS() {
 
 function serve() {
   server.init({
-    server: 'build/',
+    server: 'build',
     notify: false,
     open: true,
     cors: true,
